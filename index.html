@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+<div class="container">
+    <div class="wrapper">
+        <div class="main">
+          <p id="logo"><i class="fa fa-music"></i>Music</p>
+        </div>
+        <div class="top-bar">
+          <i class="material-icons">expand_more</i>
+          <span><b>Now Playing</b></span>
+          <i class="material-icons check">more_horiz</i>
+        </div>
+        <div class="img-area">
+          <img src="images/music-1.jpg" alt="" />
+        </div>
+        <div class="song-details">
+          <p class="name">Girls like u</p>
+          <p class="artist">Maroon 5</p>
+        </div>
+        <div class="progress-area">
+          <div class="progress-bar" style="width: 13.3314%">
+            <audio id="main-audio" src=""></audio>
+            <span></span>
+          </div>
+          <div class="song-timer">
+            <span class="current-time">0:00</span>
+            <span class="max-duration">0:00</span>
+          </div>
+        </div>
+        <div class="volume">
+          <p id="volume_show">92</p>
+          <i class="fa fa-volume-up" aria-hidden="true" id="volume_icon"></i>
+          <input type="range" min="0" max="100" value="0" id="volume" />
+        </div>
+        <div class="controls">
+          <i id="repeat-plist" class="material-icons" title="Playlist looped"
+            >repeat</i
+          >
+          <i id="prev" class="material-icons">skip_previous</i>
+          <div class="play-pause">
+            <i class="material-icons play">play_arrow</i>
+          </div>
+          <i id="next" class="material-icons">skip_next</i>
+          <i id="more-music" class="material-icons">queue_music</i>
+        </div>
+      </div>
+    </div>
+</div> 
+    <script src="music-list.js"></script>
+    <script src="script.js"></script>
+   
+  </body>
+</html>
